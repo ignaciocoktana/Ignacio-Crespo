@@ -1,0 +1,14 @@
+<template>
+    <ligthning-card title="Organisations" icon-name="standard:account">
+        <div class="sld-m-around_medium">
+            <template if:true={accounts.data}>
+                <ligthning-datatable 
+                    key-field="Id"
+                    data={accounts.data}
+                    columns={columnds}
+                    onrowselection="{getSelectedAccountContact}">
+                </ligthning-datatable>
+            </template>
+        </div>
+    </ligthning-card>
+</template>

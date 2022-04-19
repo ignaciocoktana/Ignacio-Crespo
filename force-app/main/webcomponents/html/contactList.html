@@ -1,0 +1,13 @@
+<template>
+    <ligthning-card title="Organisations" icon-name="standard:contact">
+        <div class="sld-m-around_medium">
+            <template if:true={contact.data}>
+                <ligthning-datatable 
+                    key-field="Id"
+                    data={contact.data}
+                    columns={columnds}>
+                </ligthning-datatable>
+            </template>
+        </div>
+    </ligthning-card>
+</template>
